@@ -44,20 +44,26 @@ error = "Wrong input. Please try again."
 
 about = """# TODO"""
 
-main_menu = """1: Install Kali Linux tools
+main_menu = """
+1: Install Kali Linux tools
 2: Edit repository information
 3: About
-00: Exit Program"""
+00: Exit Program
+"""
 
-install = """1: Install all tools
+install = """
+1: Install all tools
 2: Browse and install by categories
 0: Return to Main menu
-00: Exit Program"""
+00: Exit Program
+"""
 
-sources = """1: Add Kali Linux repository
+sources = """
+1: Add Kali Linux repository
 2: Remove Kali Linux repository
 0: Return to Main menu
-00: Exit Program"""
+00: Exit Program
+"""
 
 categories = """
 1: Information Gathering            8: Exploitation Tools
@@ -66,13 +72,16 @@ categories = """
 4: Web Applications                11: Password Attacks
 5: Sniffing & Spoofing             12: Reverse Engineering
 6: Maintaining Access              13: Hardware Hacking
-7: Reporting Tools                 14: Extra"""
+7: Reporting Tools                 14: Extra
+"""
 
 contains = "Kali repository/-ies found inside sources list. Aborting now."
 
 repo = "deb http://http.kali.org/kali kali-rolling main contrib non-free"
 
 info = """
+                Information Gathering
+
  1: acccheck              20: enum4linux      39: ntop
  2: ace-voip              21: enumIAX         40: p0f
  3: Amap                  22: exploitdb       41: Parsero
@@ -95,6 +104,8 @@ info = """
 """
 
 vulnerability = """
+                Vulnerability Analysis
+
  1: BBQSQL                          18: ohrwurm
  2: BED                             19: openvas-administrator
  3: cisco-auditing-tool             20: openvas-cli
@@ -115,6 +126,8 @@ vulnerability = """
 """
 
 wifi = """
+            Wireless Attacks
+
  1: Aircrack-ng          17: kalibrate-rtl
  2: Asleap               18: KillerBee
  3: Bluelog              19: Kismet
@@ -134,6 +147,8 @@ wifi = """
 """
 
 sniff_n_spoof = """
+        Sniffing & Spoofing
+
  1: Burp Suite         17: rtpmixsound
  2: DNSChef            18: sctpscan
  3: fiked              19: SIPArmyKnife
@@ -153,6 +168,8 @@ sniff_n_spoof = """
 """
 
 access = """
+      Maintaining Access
+
 1: CryptCat      10: PowerSploit
 2: Cymothoa      11: pwnat
 3: dbd           12: RidEnum
@@ -165,6 +182,8 @@ access = """
 """
 
 report = """
+     Reporting Tools
+
 1: CaseFile   6: MagicTree
 2: CutyCapt   7: Metagoofil
 3: dos2unix   8: Nipper-ng
@@ -173,6 +192,8 @@ report = """
 """
 
 exploit = """
+              Exploitation Tools
+
 1: Armitage                 10: jboss-autopwn
 2: Backdoor Factory         11: Linux Exploit Suggester
 3: BeEF                     12: Maltego Teeth
@@ -185,6 +206,8 @@ exploit = """
 """
 
 forensics = """
+          Forensics Tools
+
  1: Binwalk          13: Galleta
  2: bulk-extractor   14: Guymager
  3: Capstone         15: iPhone Backup Analyzer
@@ -200,6 +223,8 @@ forensics = """
 """
 
 stress_test = """
+        Stress Testing
+
 1: DHCPig          8: Reaver
 2: FunkLoad        9: rtpflood
 3: iaxflood       10: SlowHTTPTest
@@ -210,6 +235,8 @@ stress_test = """
 """
 
 password = """
+                      Password Attacks
+
  1: acccheck              13: HexorBase         25: phrasendrescher
  2: Burp Suite            14: THC-Hydra         26: polenum
  3: CeWL                  15: John the Ripper   27: RainbowCrack
@@ -225,6 +252,8 @@ password = """
 """
 
 rev_engineer = """
+    Reverse Engineering
+
 1: apktool         7: JD-GUI
 2: dex2jar         8: OllyDbg
 3: diStorm3        9: smali
@@ -234,7 +263,31 @@ rev_engineer = """
 """
 
 hw_hacking = """
+     Hardware Hacking
 1: android-sdk   4: dex2jar
 2: apktool       5: Sakis3G
 3: Arduino       6: smali
 """
+
+webapps = """
+                  Web Applications
+
+ 1: apache-users     15: joomscan        29: ua-tester
+ 2: Arachni          16: jSQL            30: Uniscan
+ 3: BBQSQL           17: Maltego Teeth   31: Vega
+ 4: BlindElephant    18: PadBuster       32: w3af
+ 5: Burp Suite       19: Paros           33: WebScarab
+ 6: CutyCapt         20: Parsero         34: Webshag
+ 7: DAVTest          21: plecost         35: WebSlayer
+ 8: deblaze          22: Powerfuzzer     36: WebSploit
+ 9: DIRB             23: ProxyStrike     37: Wfuzz
+10: DirBuster        24: Recon-ng        38: WPScan
+11: fimap            25: Skipfish        39: XSSer
+12: FunkLoad         26: sqlmap          40: zaproxy
+13: Grabber          27: Sqlninja
+14: jboss-autopwn    28: sqlsus
+"""
+
+categories = [info, vulnerability, wifi, sniff_n_spoof, access, report,
+              exploit, forensics, stress_test, password, rev_engineer,
+              hw_hacking, webapps]

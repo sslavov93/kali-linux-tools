@@ -32,14 +32,14 @@ class Installer():
             os.system("sh " + packages.all_packages[tool])
 
     def pick_packages(self):
-        categories = packages.categories
         all_chosen = set()
-        for cat in categories:
-            for key, value in cat:
-                print(key + ": " + value)
+        prt_count = 0
+        for cat in packages.categories:
+            print(messages.categories[prt_count])
+            prt_count += 1
             choices = input(
-                "Choose packages (comma-separated numbers) >>> ").split(
-                    ",").strip()
+                "Choose packages (comma-separated numbers) >>> ").strip(
+            ).replace(" ", "").split(",")
             if choices == "all":
                 for each in cat:
                     all_chosen.add(cat[each])
@@ -50,8 +50,8 @@ class Installer():
         return all_chosen
 
     def install_specific(self):
-        packages = self.pick_packages()
-        for package in packages:
+        pkgs = self.pick_packages()
+        for package in pkgs:
             os.system("sh " + packages.all_packages[package])
 
 
@@ -107,7 +107,7 @@ class Installer():
             print(messages.error)
 
     def start(self):
-        print(messages.splash)
+        # print(messages.splash)
         while self.exit is False:
             self.main_menu()
 
