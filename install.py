@@ -11,7 +11,7 @@ class Installer():
     def __init__(self):
         self.exit = False
         self.m_menu = {"1": self.install, "2": self.sources_list,
-                       "3": self.help, "00": self.exit_tool}
+                       "3": self.about, "00": self.exit_tool}
 
         self.inst_menu = {"1": self.install_all, "2": self.install_specific,
                           "3": "", "0": self.main_menu, "00": self.exit_tool}
@@ -37,7 +37,9 @@ class Installer():
         for cat in categories:
             for key, value in cat:
                 print(key + ": " + value)
-            choices = input("KLT >>> ").split(",").strip()
+            choices = input(
+                "Choose packages (comma-separated numbers) >>> ").split(
+                    ",").strip()
             if choices == "all":
                 for each in cat:
                     all_chosen.add(cat[each])
@@ -88,13 +90,13 @@ class Installer():
 
 
 # HELPER
-    def help(self):
-        print(messages.hlp)
+    def about(self):
+        print(messages.about)
 
 # UTIL / MISC
     def exit_tool(self):
         self.exit = True
-        return "Bye"
+        return "Program will exit now."
 
     def main_menu(self):
         print(messages.main_menu)

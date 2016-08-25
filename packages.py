@@ -348,7 +348,6 @@ rev_engineer = {"1": "apktool", "2": "dex2jar", "3": "diStorm3",
 hw_hacking = {"1": "android-sdk", "2": "apktool", "3": "Arduino",
               "4": "dex2jar", "5": "Sakis3G", "6": "smali"}
 
-
 categories = [info, vulnerability, wifi, sniff_n_spoof, access, report,
               exploit, forensics, stress_test, password, rev_engineer,
               hw_hacking]
