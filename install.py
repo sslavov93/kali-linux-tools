@@ -27,9 +27,18 @@ class Installer():
         else:
             print(messages.error)
 
+    def setup(self):
+        self.add_kali_repo()
+        os.system("sh scripts/util/setup.sh")
+
+    def cleanup(self):
+        os.system("sh scripts/util/teardown.sh")
+
     def install_all(self):
+        self.setup()
         for tool in packages.all_packages:
             os.system("sh " + packages.all_packages[tool])
+        self.cleanup()
 
     def pick_packages(self):
         all_chosen = set()
@@ -50,9 +59,11 @@ class Installer():
         return all_chosen
 
     def install_specific(self):
+        self.setup()
         pkgs = self.pick_packages()
         for package in pkgs:
             os.system("sh " + packages.all_packages[package])
+        self.cleanup()
 
 
 # SOURCES
@@ -71,7 +82,7 @@ class Installer():
         self.backup_sources_list()
         with open("/etc/apt/sources.list", "r") as f:
             for line in f.readlines():
-                if line.find("kali") >= 0:
+                if "kali" in line:
                     print(messages.contains)
                     return
         with open("/etc/apt/sources.list", "a") as f:
