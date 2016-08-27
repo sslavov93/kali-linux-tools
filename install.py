@@ -15,7 +15,7 @@ class Installer():
 
         self.inst_menu = {"1": self.install_all, "2": self.install_specific,
                           "3": "", "0": self.main_menu, "00": self.exit_tool}
-        self.src_menu = {"1": self.add_kali_repo, "2": self.remove_kali_repo,
+        self.src_menu = {"1": self.setup, "2": self.remove_kali_repo,
                          "0": self.main_menu, "00": self.exit_tool}
 
 # INSTALLER
