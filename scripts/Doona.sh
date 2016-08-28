@@ -1,1 +1,1 @@
-sudo apt-get install doona
+sudo apt-get -y install doona

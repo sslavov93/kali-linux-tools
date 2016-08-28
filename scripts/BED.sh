@@ -1,1 +1,1 @@
-sudo apt-get install -y bed
+sudo apt-get -y install bed
