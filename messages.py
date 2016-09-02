@@ -80,91 +80,88 @@ contains = "Kali repository/-ies found inside sources list. Aborting now."
 repo = "deb http://http.kali.org/kali kali-rolling main contrib non-free"
 
 info = """
-                Information Gathering
+                 Information Gathering
 
- 1: acccheck              20: enum4linux      39: ntop
- 2: ace-voip              21: enumIAX         40: p0f
- 3: Amap                  22: exploitdb       41: Parsero
- 4: Automater             23: Fierce          42: Recon-ng
- 5: bing-ip2hosts         24: Firewalk        43: SET
- 6: braa                  25: fragroute       44: smtp-user-enum
- 7: CaseFile              26: fragrouter      45: snmpcheck
- 8: CDPSnarf              27: Ghost Phisher   46: sslcaudit
- 9: cisco-torch           28: GoLismero       47: SSLsplit
-10: Cookie Cadger         29: goofile         48: sslstrip
-11: copy-router-config    30: hping3          49: SSLyze
-12: DMitry                31: InTrace         50: THC-IPV6
-13: dnmap                 32: iSMTP           51: theHarvester
-14: dnsenum               33: lbd             52: TLSSLed
-15: dnsmap                34: Maltego Teeth   53: twofi
-16: DNSRecon              35: masscan         54: URLCrazy
-17: dnstracer             36: Metagoofil      55: Wireshark
-18: dnswalk               37: Miranda         56: WOL-E
-19: DotDotPwn             38: Nmap            57: Xplico
+ 1: acccheck              20: enumIAX        39: p0f
+ 2: ace-voip              21: exploitdb      40: Parsero
+ 3: Amap                  22: Fierce         41: Recon-ng
+ 4: Automater             23: Firewalk       42: SET
+ 5: braa                  24: fragrouter     43: smtp-user-enum
+ 6: CaseFile              25: fragrouter     44: snmpcheck
+ 7: CDPSnarf              26: GhostPhisher   45: sslcaudit
+ 8: cisco-torch           27: GoLismero      46: SSLsplit
+ 9: CookieCadger          28: goofile        47: sslstrip
+10: copy-router-config    29: hping3         48: SSLyze
+11: DMitry                30: InTrace        49: THC-IPV6
+12: dnmap                 31: iSMTP          50: theHarvester
+13: dnsenum               32: lbd            51: TLSSLed
+14: dnsmap                33: MaltegoTeeth   52: twofi
+15: DNSRecon              34: masscan        53: URLCrazy
+16: dnstracer             35: Metagoofil     54: Wireshark
+17: dnswalk               36: Miranda        55: WOL-E
+18: DotDotPwn             37: Nmap           56: Xplico
+19: enum4linux            38: ntop
 """
 
 vulnerability = """
-                Vulnerability Analysis
+              Vulnerability Analysis
 
- 1: BBQSQL                          18: ohrwurm
- 2: BED                             19: openvas-administrator
- 3: cisco-auditing-tool             20: openvas-cli
- 4: cisco-global-exploiter          21: openvas-manager
- 5: cisco-ocs                       22: openvas-scanner
- 6: cisco-torch                     23: Oscanner
- 7: copy-router-config              24: Powerfuzzer
- 8: DBPwAudit                       25: sfuzz
- 9: Doona                           26: SidGuesser
-10: DotDotPwn                       27: SIPArmyKnife
-11: Greenbone Security Assistant    28: sqlmap
-12: GSD                             29: Sqlninja
-13: HexorBase                       30: sqlsus
-14: Inguma                          31: THC-IPV6
-15: jSQL                            32: tnscmd10g
-16: Lynis                           33: unix-privesc-check
-17: Nmap                            34: Yersinia
+ 1: BBQSQL                        17: ohrwurm
+ 2: BED                           18: openvas-cli
+ 3: cisco-auditing-tool           19: openvas-manager
+ 4: cisco-global-exploiter        20: openvas-scanner
+ 5: cisco-ocs                     21: Oscanner
+ 6: cisco-torch                   22: Powerfuzzer
+ 7: copy-router-config            23: sfuzz
+ 8: DBPwAudit                     24: SidGuesser
+ 9: Doona                         25: SIPArmyKnife
+10: DotDotPwn                     26: sqlmap
+11: GreenboneSecurityAssistant    27: Sqlninja
+12: HexorBase                     28: sqlsus
+13: Inguma                        29: THC-IPV6
+14: jSQL                          30: tnscmd10g
+15: Lynis                         31: unix-privesc-check
+16: Nmap                          32: Yersinia
 """
 
 wifi = """
-            Wireless Attacks
+         Wireless Attacks
 
- 1: Aircrack-ng          17: kalibrate-rtl
- 2: Asleap               18: KillerBee
- 3: Bluelog              19: Kismet
- 4: BlueMaho             20: mdk3
- 5: Bluepot              21: mfcuk
- 6: BlueRanger           22: mfoc
- 7: Bluesnarfer          23: mfterm
- 8: Bully                24: Multimon-NG
- 9: coWPAtty             25: PixieWPS
-10: crackle              26: Reaver
-11: eapmd5pass           27: redfang
-12: Fern Wifi Cracker    28: RTLSDR Scanner
-13: Ghost Phisher        29: Spooftooph
-14: GISKismet            30: Wifi Honey
-15: Gqrx                 31: Wifitap
-16: gr-scan              32: Wifite
+ 1: Aircrack-ng        16: Kismet
+ 2: Asleap             17: mdk3
+ 3: Bluelog            18: mfcuk,
+ 4: BlueRanger,        19: mfoc
+ 5: Bluesnarfer        20: mfterm
+ 6: Bully              21: Multimon-NG
+ 7: coWPAtty           22: PixieWPS,
+ 8: crackle,           23: Reaver
+ 9: eapmd5pass         24: redfang
+10: FernWifiCracker    25: RTLSDRScanner
+11: GhostPhisher       26: Spooftooph
+12: GISKismet          27: WifiHoney
+13: Gqrx               28: Wifitap
+14: kalibrate-rtl      29: Wifite
+15: KillerBee
 """
 
 sniff_n_spoof = """
         Sniffing & Spoofing
 
- 1: Burp Suite         17: rtpmixsound
- 2: DNSChef            18: sctpscan
- 3: fiked              19: SIPArmyKnife
- 4: hamster-sidejack   20: SIPp
- 5: HexInject          21: SIPVicious
- 6: iaxflood           22: SniffJoke
- 7: inviteflood        23: SSLsplit
- 8: iSMTP              24: sslstrip
- 9: isr-evilgrade      25: THC-IPV6
-10: mitmproxy          26: VoIPHopper
-11: ohrwurm            27: WebScarab
-12: protos-sip         28: Wifi Honey
-13: rebind             29: Wireshark
-14: responder          30: xspy
-15: rtpbreak           31: Yersinia
-16: rtpinsertsound     32: zaproxy
+ 1: BurpSuite          16: rtpmixsound
+ 2: DNSChef            17: sctpscan
+ 3: fiked              18: SIPArmyKnife
+ 4: hamster-sidejack   19: SIPp
+ 5: HexInject          20: SIPVicious
+ 6: iaxflood           21: SSLsplit
+ 7: inviteflood        22: sslstrip
+ 8: iSMTP              23: THC-IPV6
+ 9: mitmproxy          24: VoIPHopper
+10: ohrwurm            25: WebScarab
+11: protos-sip         26: WifiHoney
+12: rebind             27: Wireshark
+13: responder          28: xspy
+14: rtpbreak           29: Yersinia
+15: rtpinsertsound     30: zaproxy
 """
 
 access = """
@@ -192,11 +189,11 @@ report = """
 """
 
 exploit = """
-              Exploitation Tools
+            Exploitation Tools
 
 1: Armitage                 10: jboss-autopwn
-2: Backdoor Factory         11: Linux Exploit Suggester
-3: BeEF                     12: Maltego Teeth
+2: BackdoorFactory          11: LinuxExploitSuggester
+3: BeEF                     12: MaltegoTeeth
 4: cisco-auditing-tool      13: SET
 5: cisco-global-exploiter   14: ShellNoob
 6: cisco-ocs                15: sqlmap
@@ -208,84 +205,85 @@ exploit = """
 forensics = """
           Forensics Tools
 
- 1: Binwalk          13: Galleta
- 2: bulk-extractor   14: Guymager
- 3: Capstone         15: iPhone Backup Analyzer
- 4: chntpw           16: p0f
- 5: Cuckoo           17: pdf-parser
- 6: dc3dd            18: pdfid
- 7: ddrescue         19: pdgmail
- 8: DFF              20: peepdf
- 9: diStorm3         21: RegRipper
-10: Dumpzilla        22: Volatility
-11: extundelete      23: Xplico
-12: Foremost
+ 1: Binwalk          11: Guymager
+ 2: bulk-extractor   12: iPhoneBackupAnalyzer
+ 3: chntpw           13: p0f
+ 4: Cuckoo           14: pdf-parser
+ 5: dc3dd            15: pdfid
+ 6: ddrescue         16: pdgmail
+ 7: Dumpzilla        17: peepdf
+ 8: extundelete      18: Volatility
+ 9: Foremost         19: Xplico
+10: Galleta
 """
 
 stress_test = """
-        Stress Testing
+         Stress Testing
 
-1: DHCPig          8: Reaver
-2: FunkLoad        9: rtpflood
-3: iaxflood       10: SlowHTTPTest
-4: Inundator      11: t50
-5: inviteflood    12: Termineter
-6: ipv6-toolkit   13: THC-IPV6
-7: mdk3           14: THC-SSL-DOS
+1: DHCPig          8: rtpflood
+2: FunkLoad        9: SlowHTTPTest
+3: iaxflood       10: t50
+4: inviteflood    11: Termineter
+5: ipv6-toolkit   12: THC-IPV6
+6: mdk3           13: THC-SSL-DOS
+7: Reaver
 """
 
 password = """
-                      Password Attacks
+            Password Attacks
 
- 1: acccheck              13: HexorBase         25: phrasendrescher
- 2: Burp Suite            14: THC-Hydra         26: polenum
- 3: CeWL                  15: John the Ripper   27: RainbowCrack
- 4: chntpw                16: Johnny            28: rcracki-mt
- 5: cisco-auditing-tool   17: keimpx            29: RSMangler
- 6: CmosPwd               18: Maltego Teeth     30: SQLdict
- 7: creddump              19: Maskprocessor     31: Statsprocessor
- 8: crunch                20: multiforcer       32: THC-pptp-bruter
- 9: DBPwAudit             21: Ncrack            33: TrueCrack
-10: findmyhash            22: oclgausscrack     34: WebScarab
-11: gpp-decrypt           23: PACK              35: wordlists
-12: hash-identifier       24: patator           36: zaproxy
+ 1: acccheck              18: MaltegoTeeth
+ 2: BurpSuite             19: Maskprocessor
+ 3: CeWL                  20: multiforcer
+ 4: chntpw                21: Ncrack
+ 5: cisco-auditing-tool   22: PACK
+ 6: CmosPwd               23: patator
+ 7: creddump              24: phrasendrescher
+ 8: crunch                25: polenum
+ 9: DBPwAudit             26: RainbowCrack
+10: findmyhash            27: rcracki-mt
+11: gpp-decrypt           28: RSMangler
+12: hash-identifier       29: Statsprocessor
+13: HexorBase             30: THC-pptp-bruter
+14: THC-Hydra             31: TrueCrack
+15: JohntheRipper         32: WebScarab
+16: Johnny                33: wordlists
+17: keimpx                34: zaproxy
 """
 
 rev_engineer = """
-    Reverse Engineering
+     Reverse Engineering
 
-1: apktool         7: JD-GUI
-2: dex2jar         8: OllyDbg
-3: diStorm3        9: smali
-4: edb-debugger   10: Valgrind
-5: jad            11: YARA
-6: javasnoop
+1: apktool        5: javasnoop
+2: dex2jar        6: smali
+3: edb-debugger   7: Valgrind
+4: jad            8: YARA
 """
 
 hw_hacking = """
-     Hardware Hacking
-1: android-sdk   4: dex2jar
-2: apktool       5: Sakis3G
-3: Arduino       6: smali
+   Hardware Hacking
+
+1: apktool  4: Sakis3G
+2: Arduino  5: smali
+3: dex2jar
 """
 
 webapps = """
                   Web Applications
 
- 1: apache-users     15: joomscan        29: ua-tester
- 2: Arachni          16: jSQL            30: Uniscan
- 3: BBQSQL           17: Maltego Teeth   31: Vega
- 4: BlindElephant    18: PadBuster       32: w3af
- 5: Burp Suite       19: Paros           33: WebScarab
- 6: CutyCapt         20: Parsero         34: Webshag
- 7: DAVTest          21: plecost         35: WebSlayer
- 8: deblaze          22: Powerfuzzer     36: WebSploit
- 9: DIRB             23: ProxyStrike     37: Wfuzz
-10: DirBuster        24: Recon-ng        38: WPScan
-11: fimap            25: Skipfish        39: XSSer
-12: FunkLoad         26: sqlmap          40: zaproxy
-13: Grabber          27: Sqlninja
-14: jboss-autopwn    28: sqlsus
+ 1: apache-users    14: jboss-autopwn   27: Sqlninja
+ 2: Arachni         15: joomscan        28: sqlsus
+ 3: BBQSQL          16: jSQL            29: ua-tester
+ 4: BlindElephant   17: MaltegoTeeth    30: Uniscan
+ 5: BurpSuite       18: PadBuster       31: Vega
+ 6: CutyCapt        19: Paros           32: w3af
+ 7: DAVTest         20: Parsero         33: WebScarab
+ 8: deblaze         21: plecost         34: Webshag
+ 9: DIRB            22: Powerfuzzer     35: WebSploit
+10: DirBuster       23: ProxyStrike     36: Wfuzz
+11: fimap           24: Recon-ng        37: WPScan
+12: FunkLoad        25: Skipfish        38: XSSer
+13: Grabber         26: sqlmap          39: zaproxy
 """
 
 categories = [info, vulnerability, wifi, sniff_n_spoof, access, report,

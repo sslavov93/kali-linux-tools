@@ -118,7 +118,7 @@ class Installer():
             print(messages.error)
 
     def start(self):
-        # print(messages.splash)
+        print(messages.splash)
         while self.exit is False:
             self.main_menu()
 
