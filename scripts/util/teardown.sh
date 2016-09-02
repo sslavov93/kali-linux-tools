@@ -1,1 +1,1 @@
-sudo apt-get autoremove
+sudo apt-get -y autoremove
